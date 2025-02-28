@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+=======
+
+>>>>>>> c9964ecdc6ba1d50fdec8bc08b980260e8a054bb
 * {
   margin: 0;
   padding: 0;
@@ -105,9 +109,15 @@ body {
   text-align: center;
 }
 .title h1 {
+<<<<<<< HEAD
   font-size: 14vw;
   font-weight: 900;
   font-family: "Dancing Script", cursive;
+=======
+  font-size: 8vw;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+>>>>>>> c9964ecdc6ba1d50fdec8bc08b980260e8a054bb
   color: orangered;
 }
 
@@ -383,10 +393,13 @@ nav a {
   background-color: var(--base-color);
   border-bottom: #000000 solid 0.1vw;
 }
+<<<<<<< HEAD
 .card div:hover{
   background-color: orangered;
   color: #ffffff;
 }
+=======
+>>>>>>> c9964ecdc6ba1d50fdec8bc08b980260e8a054bb
 .sec3 {
   width: 100%;
   height: 50vh;
