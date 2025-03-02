@@ -7,10 +7,13 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
   <script src="darkmode.js" defer></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="styles/ihover.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <section class="header">
     <nav>
       <a href="">McKay©</a>
       <a href="#about">About</a>
@@ -43,21 +46,29 @@
       </div>
     </div>
 
-  </header>
+  </section>
   <section class="sec1">
     <div id="about" class="main-text">
-      <span>Hey, I'm Makafui!</span><br>I'm a versatile designer who works with creators to develop their ideas, from
+      <span style="text-align: left;">I'm Makafui!</span>A versatile creative who works with creators to develop their
+      ideas, from
       initial concept to launch.
-      <br> <span>Let's turn your ideas into reality!</span>
+      <br>
+      <div class="typing-demo">
+        <span style="text-align: right;">Let's turn your ideas into reality!</span>
+      </div>
+
     </div>
+  </section>
+  <section>
     <div class="sub-text">
-      Bringing your vision to life quickly and efficiently—whether it's
-      branding, <br />
-      apps, or websites—I've got it covered, delivering smooth and effective
-      <br />
-      solutions from start to finish.<br />
+      <div class="description">
+        Bringing your <span>vision</span> to life quickly and <span>efficiently</span> whether it's
+        <span>branding</span>, <span>apps</span>, or <span>websites</span>, I've got it covered, delivering <span>smooth
+        </span> and <span>effective
+          solutions</span> from start to <span>finish</span> .<br />
+      </div>
       <button class="btn liquid" onclick="window.open('./Makafui-Ametepeh CV.pdf', '_blank')">
-        <span>Download CV</span>
+        Download CV
       </button>
     </div>
   </section>
@@ -73,8 +84,10 @@
         <div>03 Blogs</div>
         <div>04 E-commerce</div>
       </div>
-
     </div>
+  </section>
+
+  <section>
     <div class="card-cont">
       <div class="number">02</div>
       <div class="card">
@@ -85,6 +98,7 @@
         <div>04 Responsive Design</div>
       </div>
   </section>
+
   <section id="projects" class="sec3">
     <div class="marquee2">
       <div class="track2">
@@ -96,12 +110,13 @@
       </div>
     </div>
   </section>
+
   <section class="sec4 ">
-    <div class="project p1">
+    <!-- <div class="project p1">
       <div class="about">
         <p style="font-size: 1.6vw; font-weight: 700; margin-bottom: 10%;">(2024)</p>
-        <h1 style="font-size: 4vw; margin-bottom: 10%; color: rgb(179, 24, 24);">Pokémon</h1>
-        <p style="font-size: 1.3vw; line-height: 1.5; font-weight: 500;">
+        <h1 style="font-size: 7vw; margin-bottom: 10%; color: rgb(179, 24, 24);">Pokémon</h1>
+        <p style="font-size: 1.5vw; line-height: 1.5; font-weight: 500;">
           This project is a simple web application that allows users to view
           Pokémon sprites by entering a Pokémon's name. It utilizes the
           PokéAPI to fetch and display the corresponding sprite instantly. The
@@ -113,6 +128,28 @@
       </div>
       <div class="img img1" onclick="window.open('https://pokemon-sm7z.vercel.app/', '_blank')"></div>
     </div>
+    <div class="wrapper">
+      <div class="image-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1583&q=80" />
+      </div>
+      <div class="header-wrapper">
+        <h1>Pokemon </h1>
+        <h1>See Project</h1>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="image-wrapper">
+        <img class="book-design-image"
+          src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1306&q=80" />
+      </div>
+      <div class="header-wrapper">
+        <h1>Book Design</h1>
+        <h1>See Project</h1>
+      </div>
+    </div>
+  
     <div class="project p2">
       <div class="about">
         <p>(2024)</p>
@@ -125,49 +162,88 @@
         </p>
       </div>
       <div class="img img2" onclick="window.open('https://mckay-z.github.io/lets-wine/', '_blank')"></div>
+    </div> -->
+    <!-- <div class="wrapper">
+      <div class="image-wrapper">
+        <img  class="img img1" onclick="window.open('https://pokemon-sm7z.vercel.app/', '_blank')"
+          src="" />
+      </div>
+      <div class="header-wrapper">
+        <h1>Pokemon</h1>
+        <h1>See Project</h1>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="image-wrapper">
+        <img class="book-design-image"
+          src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1306&q=80" />
+      </div>
+      <div class="header-wrapper">
+        <h1>Lets Wine</h1>
+        <h1>See Project</h1>
+      </div>
+    </div> -->
+    <div class="holographic-container ">
+      <div class="holographic-card hc1" onclick="window.open('https://pokemon-sm7z.vercel.app/', '_blank')">
+        <h2>Pokemon</h2>
+      </div>
+    </div>
+    <div class="holographic-container">
+      <div onclick="window.open('https://mckay-z.github.io/lets-wine/', '_blank')" class="holographic-card hc2">
+        <h2>Lets Wine</h2>
+      </div>
     </div>
   </section>
-  <footer id="contact">
+
+  <section class="footer" id="contact">
     <div class="txtcont">Reach Out</div>
+
     <div class="form-cont">
       <form class="form" action="mailto:mametepeh11@gmail.com" method="post" enctype="text/plain">
         <input
           style="padding: 1.5vw; font-size: 2vw; border: none; border-bottom: solid 1px orangered; outline: none; color: orangered; background-color: var(--base-color);"
           type="text" name="Email" placeholder="Email"
           oninput="if(this.value){this.style.color='orangered';}else{this.style.color='orangered';}" />
+
         <textarea
           style="padding: 1.5vw; border: none; outline: none; font-size: 2vw; overflow-y: hidden; resize: none; border-bottom: solid 1px orangered; color: orangered; background-color: var(--base-color);"
           name="Message" placeholder="Message"
-          oninput="if(this.scrollHeight > this.clientHeight){this.style.height = this.scrollHeight + 'px';} if(this.value){this.style.color='orangered';}else{this.style.color='orangered'; this.style.height = 'auto';}"></textarea>
+          oninput="if(this.scrollHeight > this.clientHeight){this.style.height = this.scrollHeight + 'px';} if(this.value){this.style.color='orangered';}else{this.style.color='orangered'; this.style.height = 'auto';}">
+        </textarea>
 
         <button class="btn2 liquid" type="submit">
           <span>Send Message</span>
         </button>
       </form>
+
       <div class="contact">
         <p>Location: Accra, Ghana</p>
         <p>Mail: mametepeh11@gmail.com</p>
         <p>Phone: +233 243491907</p>
       </div>
+
       <div class="hero-txt">
-        <div class="social">
-          <a href="https://github.com/Mckay-z" target="_blank">
-            <img src="./images/github.png" alt="GitHub" />
-          </a>
-          <a href="https://www.linkedin.com/in/makafui-ametepeh" target="_blank">
-            <img src="./images/linkedin-logo.png" alt="LinkedIn" />
-          </a>
-          <a href="https://wa.link/ser1v6" target="_blank">
-            <img src="./images/whatsapp-logo.png" alt="WhatsApp" />
-          </a>
-          <a href="mailto:mametepeh11@gmail.com" target="_blank">
-            <img src="./images/gmail.png" alt="Gmail" />
-          </a>
-        </div>
+        <ul>
+          <li>
+            <a href="https://github.com/Mckay-z" target="_blank">
+
+              <i class="fab fa-github icon" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://wa.link/ser1v6" target="_blank"><i class="fab fa-whatsapp icon"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/makafui-ametepeh" target="_blank"><i
+              class="fab fa-linkedin-in icon"></i></a>
+          </li>
+          <li>
+            <a a href="mailto:mametepeh11@gmail.com" target="_blank"><i class="fa fa-envelope icon"></i></a>
+          </li>
+        </ul>
       </div>
     </div>
-
-  </footer>
+  </section>
 </body>
 
 </html>
