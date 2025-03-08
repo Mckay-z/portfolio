@@ -25,13 +25,11 @@ section {
 .header {
   width: 100%;
   height: 100vh;
-  /* background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.863) 0%, rgba(0, 0, 0, 0.671) 35%),url(./images/photo_4_2025-02-28_02-13-44.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png"); */
   min-height: 100vh;
 
   --bkg: #f12525;
@@ -327,7 +325,8 @@ nav a:hover {
 }
 
 .liquid {
-  background: linear-gradient(orangered 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
+  background: linear-gradient(orangered 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
   transition: 0.3s var(--t, 0s),
     background-position 0.3s calc(0.3s - var(--t, 0s));
 }
@@ -495,9 +494,11 @@ nav a:hover {
 }
 
 .img2:hover {
-  background-image: linear-gradient(90deg,
+  background-image: linear-gradient(
+      90deg,
       rgba(0, 0, 0, 0.719) 0%,
-      rgba(0, 0, 0, 0.822) 35%),
+      rgba(0, 0, 0, 0.822) 35%
+    ),
     url(./images/letswine.png);
 }
 
@@ -557,10 +558,12 @@ nav a:hover {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(0deg,
-      transparent,
-      transparent 30%,
-      var(--primary-color));
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    var(--primary-color)
+  );
   transform: rotate(-45deg);
   transition: all 0.5s ease;
   opacity: 0;
@@ -575,77 +578,6 @@ nav a:hover {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
 }
-
-/* .wrapper {
-  position: relative;
-  height: 100vh;
-  width: 80vw;
-  margin: 6.67vh 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  transition: all 200ms ease-in-out;
-}
-
-.image-wrapper {
-  height: 80vh;
-  width: 50vw;
-  overflow: hidden;
-  border-radius: 0.67vw;
-  cursor: pointer;
-
-  transition: all 200ms ease-in-out;
-}
-
-img {
-  height: 50vh;
-  width: 50vw;
-  object-fit: cover;
-  object-position: top;
-  
-  transition: all 200ms ease-in-out;
-}
-
-.book-design-image {
-  object-position: center;
-}
-
-.header-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 14vh;
-  width: fit-content;
-  transition: all 200ms ease-in-out;
-  overflow: hidden;
-}
-
-.header-wrapper h1 {
-  position: relative;
-  bottom: 0;
-  height: 40vh;
-  color: rgb(0, 0, 0);
-  font-size: 6vw;
-  text-transform: uppercase;
-  font-weight: 900;
-  transition: all 200ms ease-in-out;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.wrapper:hover img {
-  transform: scale(1);
-}
-
-.wrapper:hover h1 {
-  bottom: 15vh;
-  transform: scale(0.4);
-}
-
-.wrapper:hover .image-wrapper {
-  width: 106.67vw;
-}
-
-
- */
 
 .footer {
   width: 100%;
@@ -702,7 +634,8 @@ img {
 }
 
 .liquid {
-  background: linear-gradient(orangered 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
+  background: linear-gradient(orangered 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
   transition: 0.3s var(--t, 0s),
     background-position 0.3s calc(0.3s - var(--t, 0s));
 }
@@ -855,107 +788,120 @@ ul li:nth-child(4) a:before {
 
 /* Media query for phones */
 @media (max-width: 480px) {
-  .txt1 {
-    font-size: 8vw;
-  }
-
-  .main-text {
-    font-size: 9vw;
-  }
-
-  .sub-text {
-    font-size: 4vw;
-  }
-
-  .btn {
-    font-size: 3.5vw;
-    padding: 3vw 3vw;
-    width: 30vw;
-  }
-
-  .btn2 {
-    font-size: 3.5vw;
-    padding: 3vw 3vw;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 4vw;
-  }
-
-  .number {
-    font-size: 15vw;
-    display: flex;
-    align-items: center;
-    width: 25%;
-    margin-right: 10px;
-  }
-
-  .serv {
-    width: 75%;
-  }
-
-  .card h1 {
-    font-size: 9vw;
-  }
-
-  .card div {
-    font-size: 4vw;
-  }
-
-  .track h1,
-  .track2 h1 {
-    font-size: 30vw;
-  }
-
-  .social img {
-    width: 6vw;
-    height: 6vw;
-  }
-
-  .txtcont {
-    font-size: 20vw;
-  }
-
-  .contact {
-    font-size: 4vw;
-  }
-
-  .sec2 {
-    padding-top: 20vh;
-    padding-left: 2vw;
-  }
-
-  .project {
+  .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  nav {
+    height: 20vh;
+  }
+  nav a {
+    color: var(--text-color);
+    font-size: 5.5vw;
+  }
+
+  .container {
     width: 100%;
     height: 100vh;
-    gap: 10px;
+    display: flex;
+    overflow: hidden;
   }
 
-  .about {
+  .title {
     width: 100%;
-    height: 40vh;
-    border: #000000 solid 2px;
-    border-radius: 1vw;
-    padding: 2vw;
+    text-align: center;
   }
 
-  .about p {
-    font-size: 12vw;
-    margin-bottom: none;
+  .title h1 {
+    font-size: 35vw;
+    font-weight: 900;
+    font-family: "Dancing Script", cursive;
+    color: orangered;
   }
 
-  .img {
-    width: 68%;
-    height: 90vh;
-    background-image: url(./images/2025-02-21\ TextStudio.png);
-    background-size: cover;
-    border: #000000 solid 2px;
-    border-radius: 1vw;
+  .ghost {
+    width: 96vw;
+  }
+  .sec1 {
+    height: 100vh;
+    display: flex;
+  }
+  .main-text {
+    font-size: 11vw;
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+  .subCont {
+    width: 100%;
+    padding: 20px;
+  }
+  .sub-text {
+    width: 100%;
+    font-size: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+  .btn {
+    width: fit-content;
+    font-size: 6vw;
+    margin-top: 10px;
+    background-color: orangered;
+    color: #ffffff;
+  }
+  .sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .sec2 text{
+    font-size: 19vw;
+  }
+  .card{
+    padding: 10px;
+  }
+  .card-cont{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .card h1{
+    font-size: 14vw;
+  }
+  .card div{
+    font-size: 6vw;
+  }
+  .sec4{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .holographic-container, .holographic-card{
+    width: 150px;
+    height: 150px;
+  }
+  .hc1{
+    margin-bottom: 30px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .txtcont{
+    width: 100%;
+    font-size: 19vw;
+  }
+  .form input{
+    font-size: 20vw;
   }
 }
