@@ -12,6 +12,60 @@
   <link href="styles/ihover.css" rel="stylesheet">
   <link rel="shortcut icon" href="./images/briefcase.png" type="image/x-icon">
 </head>
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" class="btn2 liquid" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<style>
+  #scrollTopBtn {
+    display: none; /* hidden by default */
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden; /* keeps the liquid effect contained */
+  }
+
+  /* Default arrow color (orange) */
+  #scrollTopBtn i {
+    color: orangered;
+    transition: color 0.6s ease; /* smooth transition */
+    pointer-events: none;
+  }
+
+  /* Sync arrow with liquid fill */
+  #scrollTopBtn:hover i {
+    color: white;
+    transition-delay: 0.4s; /* delay so it changes *after* the liquid animation starts */
+  }
+</style>
+
+<script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  // Show button when user scrolls down
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 200) {
+      scrollTopBtn.style.display = "flex";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  });
+
+  // Scroll to top smoothly
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 
 <body>
   <section class="header">
@@ -127,21 +181,43 @@
     <div class="txtcont">Reach Out</div>
 
     <div class="form-cont">
-      <form class="form" action="mailto:mametepeh11@gmail.com" method="post" enctype="text/plain">
-        <input class="init"
-          style="padding: 1.5vw; font-size: 2vw;  border: none; border-bottom: solid 1px orangered; outline: none; color: orangered; background-color: var(--base-color);"
-          type="text" name="Email" placeholder="Email"
-          oninput="if(this.value){this.style.color='orangered';}else{this.style.color='orangered';}" />
+     <!-- Secure Contact Form (Formspree) -->
+<form action="https://formspree.io/f/xpwlgdeo" method="POST" class="form">
 
-        <textarea
-          style="padding: 1.5vw; font-size: 2vw; border: none; outline: none;  overflow-y: hidden; resize: none; border-bottom: solid 1px orangered; color: orangered; background-color: var(--base-color);"
-          name="Message" placeholder="Message"
-          oninput="if(this.scrollHeight> this.clientHeight){this.style.height = this.scrollHeight + 'px';} if(this.value){this.style.color='orangered';}else{this.style.color='orangered'; this.style.height = 'auto';}"></textarea>
+  <!-- Email -->
+  <input 
+    class="init"
+    type="email" 
+    name="email" 
+    placeholder="Email" 
+    required
+    style="padding: 1.5vw; font-size: 2vw; border: none; border-bottom: solid 1px orangered; outline: none; color: orangered; background-color: var(--base-color);" 
+  />
 
-        <button class="btn2 liquid" type="submit">
-          <span>Send Message</span>
-        </button>
-      </form>
+  <!-- Message -->
+  <textarea
+    name="message"
+    placeholder="Message"
+    required
+    style="padding: 1.5vw; font-size: 2vw; border: none; outline: none; overflow-y: hidden; resize: none; border-bottom: solid 1px orangered; color: orangered; background-color: var(--base-color);"
+    oninput="if(this.scrollHeight > this.clientHeight){this.style.height = this.scrollHeight + 'px';} 
+             if(this.value){this.style.color='orangered';} 
+             else{this.style.color='orangered'; this.style.height = 'auto';}"></textarea>
+
+  <!-- Submit -->
+  <button class="btn2 liquid" type="submit">
+    <span>Send Message</span>
+  </button>
+</form>
+<!-- Placeholder styling -->
+<style>
+  input::placeholder,
+  textarea::placeholder {
+    color: orangered;
+    opacity: 0.5; /* faded look */
+  }
+</style>
+
 
       <div class="contact">
         <p>Location: Accra, Ghana</p>
